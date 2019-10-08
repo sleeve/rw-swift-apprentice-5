@@ -126,3 +126,58 @@ answer += 10
 answer *= 10
 answer >>= 3
 answer // answer is 13
+
+// Challenges
+// Challenge 1: Variables
+let myAge2: Int = 39 // myAge was already created in the mini-exercises...
+var dogs: Int = 1
+dogs += 1
+dogs // dogs = 2
+
+// Challenge 2: Make it compile
+var age: Int = 16
+print(age)
+age = 30
+print(age)
+
+// Challenge 3: Compute the answer
+let x: Int = 46
+let y: Int = 10
+// answer1 should be 4610
+// answer2 should be 5600
+// answer3 should be 4601
+let answer1: Int = (x * 100) + y
+let answer2: Int = (x * 100) + (y * 100)
+let answer3: Int = (x * 100) + (y / 10)
+
+// Challenge 4: Add parentheses
+// such a poorly written challenge...
+8 - 4 * 2 + 6 / 3 * 4
+(8 - (4 * 2)) + ((6 / 3) * 4)
+
+// Challenge 5: Average rating
+let rating1: Double = 2.1
+let rating2: Double = 3.2
+let rating3: Double = 2.4
+let averageRating: Double = (rating1 + rating2 + rating3) / 3
+
+// Challenge 6: Electrical power
+let voltage: Double = 12
+let current: Double = 1.5
+let power: Double = voltage * current
+
+// Challenge 7: Electrical resistance
+let resistance: Double = power / (current * current)
+
+// Challenge 8: Random integer
+let randomNumber = arc4random()
+let diceRoll = (randomNumber % 6) + 1
+
+// Challenge 9: Quadratic equations
+// another poorly written challenge...
+let a: Double = 2
+let b: Double = 3
+let c: Double = 1
+let root1: Double = (-b + (b * b - 4 * a * c).squareRoot()) / (2 * a)
+let root2: Double = (-b - (b * b - 4 * a * c).squareRoot()) / (2 * a)
+// I still need to work on statements with multiple parentheses
