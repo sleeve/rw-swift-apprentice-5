@@ -115,8 +115,8 @@ counter *= 3 // same as counter = counter * 3
 counter /= 2 // same as counter = counter / 2
 
 // Mini-exercises
-let myAge: Int = 39
-var averageAge: Double = 39
+let myAge: Int = 33
+var averageAge: Double = 33
 averageAge = (averageAge + 30) / 2
 let testNumber: Int = 89897
 let evenOdd = testNumber % 2 // result is 1 for odd testNumbers and 0 for evens
@@ -129,7 +129,7 @@ answer // answer is 13
 
 // Challenges
 // Challenge 1: Variables
-let myAge2: Int = 39 // myAge was already created in the mini-exercises...
+let myAge2: Int = 33 // myAge was already created in the mini-exercises...
 var dogs: Int = 1
 dogs += 1
 dogs // dogs = 2
