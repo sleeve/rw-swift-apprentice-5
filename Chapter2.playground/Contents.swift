@@ -102,3 +102,34 @@ let fullName: String = firstName + " " + lastName
 
 // Exercise 3
 let myDetails: String = "Hello, my name is \(fullName)."
+
+// Tuples
+let coordinates: (Int, Int) = (2, 3)
+let coordinates2 = (2, 3)
+let coordinatesDoubles = (2.1, 3.5) // Inferred to be of type (Double, Double)
+let coordinatesMixed = (2.1, 3) // Inferred to be of type (Double, Int)
+let x1 = coordinates.0
+let y1 = coordinates.1
+let coordinatesNamed = (x: 2, y: 3) // Inferred to be of type (x: Int, y: Int)
+let x2 = coordinatesNamed.x
+let y2 = coordinatesNamed.y
+let coordinates3D = (x: 2, y: 3, z: 1)
+let (x3, y3, z3) = coordinates3D
+/* above is equivalent to
+ let x3 = coordinates3D.x
+ let y3 = coordinates3D.y
+ let z3 = coordinates3D.z
+*/
+let (x4, y4, _) = coordinates3D
+
+// Mini-exercises
+// another poorly written exercise
+// Exercise 1
+let dayAverageTemp: (Int, Int, Int, Double) = (11, 21, 2018, 25.4)
+// Exercise 2
+let dayAverageTempNamed: (month: Int, day: Int, year: Int, averageTemperature: Double) = (11, 21, 2018, 25.4)
+// Exercise 3
+let (_, day, _, averageTemperature) = dayAverageTempNamed
+// Exercise 4
+var dayAverageTempNamedVar: (month: Int, day: Int, year: Int, averageTemperature: Double) = (11, 21, 2018, 25.4)
+dayAverageTempNamedVar.averageTemperature = 66.7
