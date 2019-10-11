@@ -133,3 +133,63 @@ let (_, day, _, averageTemperature) = dayAverageTempNamed
 // Exercise 4
 var dayAverageTempNamedVar: (month: Int, day: Int, year: Int, averageTemperature: Double) = (11, 21, 2018, 25.4)
 dayAverageTempNamedVar.averageTemperature = 66.7
+
+// Number types
+let a: Int16 = 12
+let b: UInt8 = 255
+let c: Int32 = -100000
+let answer = Int(a) + Int(b) + Int(c) // answer is of type Int
+
+// Type aliases
+typealias Animal = String
+let myPet: Animal = "Dog"
+typealias Coordinates = (Int, Int)
+let xy: Coordinates = (2, 4)
+
+// Challenges
+// Challenge 1: Coordinates
+let coordinates1: (Int, Int) = (2, 3)
+
+// Challenge 2: Named coordinate
+let namedCoordinate: (row: Int, column: Int)
+
+// Challenge 3: Which are valid?
+// let character: Character = "Dog" // not valid because the Character type can only hold one character
+let character2: Character = "🐶"
+let string: String = "Dog"
+let string2: String = "🐶"
+
+// Challenge 4: Does it compile?
+let tuple = (day: 15, month: 8, year: 2015)
+let day2 = tuple.day // doesn't compile because `Day` is not all lowercase.
+
+// Challenge 5: Find the error
+let name2 = "Matt"
+//name2 += " Galloway" // name2 is a constant so we can't change it
+
+// Challenge 6: What is the type of value?
+let tuple2 = (100, 1.5, 10)
+let value = tuple2.1 // value should be 1.5 as the tuple index starts at 0, so .1 would be the second member which is 1.5
+
+// Challenge 7: What is the value of month?
+let tuple3 = (day: 15, month: 8, year: 2015)
+let month = tuple3.month // value of month is 8
+
+// Challenge 8: What is the value of summary?
+let number = 10
+let multiplier = 5
+let summary = "\(number) multiplied by \(multiplier) equals \(number * multiplier)"
+// summary should be "10 multiplied by 5 equals 50"
+
+// Challenge 9: Compute the value
+let a2 = 4
+let b2: Int32 = 100
+let c2: UInt8 = 12
+// a2 + b2 - c2 should equal 92 but we have to convert them all to the same type (in this case Int) because we can't use arithmetic operators on different types of numbers even if they are closely related to each other.
+let result = Int(a2) + Int(b2) - Int(c2)
+
+// Challenge 10: Different precision 𝜋s
+// Double.pi should be twice as large as Float.pi and therefore have greater precision
+let doublePi = Double.pi
+let floatPi = Float.pi
+let difference = Double.pi - Double(Float.pi)
