@@ -1,2 +1,2 @@
-# rw-swift-apprentice-5
-Excercises for Ray Wenderlich Swift Apprentice 5.0
+# Swift Apprentice 5
+Excercises for Ray Wenderlich Swift Apprentice 5.0.0
