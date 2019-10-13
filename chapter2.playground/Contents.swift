@@ -30,6 +30,8 @@
 
 import Foundation
 
+// Chapter 2: Types & Operations
+
 // Type conversion
 var integer: Int = 100
 var decimal: Double = 12.5
