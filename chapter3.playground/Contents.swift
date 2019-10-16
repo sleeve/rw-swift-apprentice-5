@@ -226,9 +226,9 @@ repeat {
 // Challenge 1: Find the error
 let firstName = "Matt"
 if firstName == "Matt" {
-    let lastName = "Galloway"
+//    let lastName = "Galloway" // commented out to remove warning
 } else if firstName == "Ray" {
-    let lastName = "Wenderlich"
+//    let lastName = "Wenderlich" // commented out to remove warning
 }
 //let fullName = firstName + " " + lastName // can't reference lastName as it was created in the if loop scope
 
@@ -254,8 +254,19 @@ if nextPosition == 3 {
 print(nextPosition)
 
 // Challenge 4: Number of days in a month
-let month: String = "October"
+// horrible challenge. needs better instructions and to work up to this random complexity. questions are different between the book and the challenge answers. and the end of the official answer with the print statement is actually wrong. 🤮
+let month: String = "january"
 let year: Int = 2019
-var numberOfDays: Int
-if month == "January"
-
+var numberOfDays: Int = 0
+if month == "january" || month == "march" || month == "may" || month == "july" || month == "august" || month == "october" || month == "december" {
+    numberOfDays = 31
+} else if month == "april" || month == "june" || month == "september" || month == "november" {
+    numberOfDays = 30
+} else if month == "february" {
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        numberOfDays = 29
+    } else {
+        numberOfDays = 28
+    }
+}
+print(numberOfDays)
