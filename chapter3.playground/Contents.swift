@@ -270,3 +270,15 @@ if month == "january" || month == "march" || month == "may" || month == "july" |
     }
 }
 print(numberOfDays)
+
+// Challenge 5: Next power of two
+
+// Challenge 6: Triangular number
+
+// Challenge 7: Fibonacci
+
+// Challenge 8: Make a loop
+
+// Challenge 9: Dice roll table
+
+
